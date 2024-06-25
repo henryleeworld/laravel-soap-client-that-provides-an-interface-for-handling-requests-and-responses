@@ -1,4 +1,4 @@
-# Laravel 9 提供介面處理請求和回應的 SOAP（簡易物件通訊協定）用戶端
+# Laravel 10 提供介面處理請求和回應的 SOAP（簡易物件通訊協定）用戶端
 
 引入 ricorocks-digital-agency 的 soap 套件來擴增提供介面處理請求和回應的 SOAP 用戶端，SOAP 是一種以 XML 為基礎的通訊協定，其作用是編譯網路服務所需的要求或回應後，再將編譯後的訊息送出到網路，簡單來說就是應用程式和用戶之間傳輸資料的一種機制。
 
@@ -16,12 +16,12 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
-- 確認安裝或啟用 SOAP 模組。
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/soap/client/add` 來進行加法計算。
+> 注意：必須安裝並啟用 SOAP 模組。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/L0GgSjB.png)
+![](https://i.imgur.com/mcu4NAT.png)
 > 以 XML 格式互相交換彼此的資料，使其與程式語言、平台和硬體無關
