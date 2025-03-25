@@ -12,6 +12,6 @@ class SoapClientController extends Controller
         $inputA = rand(0,100000);
         $inputB = rand(0,100000);
         $result = Soap::to($endpoint)->call('Add', ['intA' => $inputA, 'intB' => $inputB]);
-        echo $inputA . ' + ' . $inputB . ' 相加結果：' . $result->AddResult . PHP_EOL;
+        echo $inputA . ' + ' . $inputB . ' ' . __('adds up to: ') . $result->AddResult . PHP_EOL;
     }
 }
